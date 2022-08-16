@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        kotlin_version = '1.7.0'
+        build_tools_version = '7.2.1'
+        appcompat_version = '1.5.0'
+        core_ktx_version = '1.8.0'
+        core_testing_version = '2.1.0'
+        constraintlayout_version = '2.1.4'
+        material_version = '1.6.1'
+        moshi_version = '1.12.0'
+        retrofit_version = '2.9.0'
+        okhttp_version = '5.0.0-alpha.10'
+        picasso_version = '2.71828'
+        circleimageview_version = '3.1.0'
+        room_version = '2.4.3'
+        work_version = '2.7.1'
+        junit_version = '4.13.2'
+        mockito_version = '4.6.1'
+        mockito_kotlin_version = '2.2.0'
+        test_runner_version = '1.4.0'
+        espresso_version = '3.3.0'
+        koin_version = '3.1.6'
+        koin_viewmodel_version = '2.2.3'
+        dagger_version = '2.43.2'
+        lifecycle_version = '2.5.1'
+        coroutines_version = '1.6.4'
+        rxjava_version = '2.2.21'
+        rxandroid_version = '2.1.1'
+        core_ktx_test_version = '1.4.0'
+        mockk_version = '1.12.5'
+        swipe_refresh_layout_version = '1.1.0'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$build_tools_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
